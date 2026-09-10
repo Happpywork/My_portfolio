@@ -12,6 +12,7 @@ export interface PersonalInfo {
   status: string;
   summary: string;
   aboutStory: string[];
+  profileImageUrl?: string;
 }
 
 export interface Education {

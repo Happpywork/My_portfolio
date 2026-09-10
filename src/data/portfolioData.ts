@@ -1,5 +1,8 @@
 import { PersonalInfo, Education, AwardCertification, TechStackCategory, Project, FAQItem } from '../types';
 
+export const PROFILE_IMAGE_URL = '/profile.jpg';
+export const GITHUB_RAW_IMAGE_URL = 'https://raw.githubusercontent.com/Happpywork/My_portfolio/2663367ded68f692a1f4023408c66a7dc4917bdc/KakaoTalk_20260910_193908927.jpg';
+
 export const initialPersonalInfo: PersonalInfo = {
   name: "성지훈",
   nameEn: "Jihoon Seong",
@@ -17,7 +20,8 @@ export const initialPersonalInfo: PersonalInfo = {
     "홍익대학교 컴퓨터공학과에서 자료구조, 알고리즘, 운영체제, 네트워크 등 기초 CS 지식을 깊이 있게 다지며 학점 4.0/4.5를 유지해 왔습니다.",
     "프론트엔드의 사용자 중심 직관성과 백엔드의 견고한 데이터 파이프라인 설계를 아우르는 풀스택 개발을 지향합니다.",
     "코드의 성능 병목을 수치로 파악하고, 기술 선택의 타당성을 논리적으로 검증하며, 동료와의 적극적인 소통을 통해 최고의 프로덕트를 만들어 갑니다."
-  ]
+  ],
+  profileImageUrl: PROFILE_IMAGE_URL,
 };
 
 export const initialEducationList: Education[] = [

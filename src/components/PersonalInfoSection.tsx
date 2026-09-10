@@ -1,6 +1,7 @@
 import React from 'react';
 import { User, Calendar, Phone, Mail, MapPin, Copy, Check, ExternalLink, Shield, Sparkles, Send } from 'lucide-react';
 import { PersonalInfo } from '../types';
+import { GITHUB_RAW_IMAGE_URL } from '../data/portfolioData';
 
 interface PersonalInfoSectionProps {
   personalInfo: PersonalInfo;
@@ -40,8 +41,17 @@ export const PersonalInfoSection: React.FC<PersonalInfoSectionProps> = ({
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/[0.08]">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#182038] to-[#0A0D18] border border-white/15 flex items-center justify-center text-2xl font-black text-[#D4FF00] shadow-inner">
-                    지훈
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl overflow-hidden border-2 border-white/20 shadow-lg bg-[#0B0F1E] shrink-0 group">
+                    <img
+                      src={personalInfo.profileImageUrl || '/profile.jpg'}
+                      alt={personalInfo.name}
+                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        e.currentTarget.src = GITHUB_RAW_IMAGE_URL;
+                      }}
+                      id="personal-info-avatar-img"
+                    />
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
