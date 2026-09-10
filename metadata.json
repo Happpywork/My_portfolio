@@ -1,0 +1,6 @@
+{
+  "name": "성지훈 포트폴리오 (Jihoon Seong Portfolio)",
+  "description": "홍익대학교 컴퓨터공학과 성지훈의 포트폴리오 웹사이트입니다. 학력, 기술 스택, 프로젝트 및 인적사항을 확인하세요.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
